@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>UltimateWebView</title>
+	<style type="text/css">
+		body{
+			background-color:#E1DEE6;
+			color:#222;
+			font-family:Arial,Helvetica,sans-serif;
+			font-size:14px;
+			margin:0;
+			padding:0;
+		}
+		h3{
+			background-color:#869BBF;
+			margin:0;
+			padding:5px;
+		}
+		ul{
+			list-style:none;
+			margin:5px;
+			padding:0;
+		}
+		ul li{
+			background-color:#FFF;
+			border:1px solid #666;
+			margin:0;
+			padding:5px;
+		}
+		ul li:first-child, h3{
+			border-top-left-radius:5px;
+			border-top-right-radius:5px;
+		}
+		ul li:last-child, h3{
+			border-bottom-left-radius:5px;
+			border-bottom-right-radius:5px;
+		}
+		ul h3:first-child{
+			background-color:#869BDF;
+			margin-bottom:5px;
+		}
+	</style>
+</head>
+<body><h3>UltimateWebView</h3>
+<ul><i></i></ul>
+<ul><li><h3>Classes</h3>
+<ul><li><A href="#0">ConsoleMessage</A></li>
+<li><A href="#1">DownloadProperties</A></li>
+<li><A href="#2">FileChooserParams</A></li>
+<li><A href="#3">FileProvider</A></li>
+<li><A href="#4">HttpAuthHandler</A></li>
+<li><A href="#5">HttpAuthRequestProperties</A></li>
+<li><A href="#6">JsProperties</A></li>
+<li><A href="#7">JsResult</A></li>
+<li><A href="#8">LoginRequestProperties</A></li>
+<li><A href="#9">MessageLevels</A></li>
+<li><A href="#10">SafeBrowsingResponse</A></li>
+<li><A href="#11">UltimateCookieManager</A></li>
+<li><A href="#12">UltimateMimeTypeMap</A></li>
+<li><A href="#13">UltimateURLUtil</A></li>
+<li><A href="#14">UltimateWebView</A></li>
+<li><A href="#15">UltimateWebViewConstants</A></li>
+<li><A href="#16">UltimateWebViewSettings</A></li>
+<li><A href="#17">WebBackForwardList</A></li>
+<li><A href="#18">WebHistoryItem</A></li>
+<li><A href="#19">WebResourceError</A></li>
+<li><A href="#20">WebResourceRequest</A></li>
+<li><A href="#21">WebResourceResponse</A></li>
+</ul></li></ul>
+<ul><A id="0"/>
+<li><h3>ConsoleMessage</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Create</b> (Message <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, SourceID <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, LineNumber <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>, MSGLevel <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Create2</b> (JavaConsoleMessage <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Initialize</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>LineNumber</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i></i>
+</li><li><b>Message</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i></i>
+</li><li><b>MessageLevel</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span> [read only]
+<br/><i></i>
+</li><li><b>MessageLevels</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>MessageLevels</span> [read only]
+<br/><i></i>
+</li><li><b>SourceId</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i></i>
+</li></ul>
+</li>
+</ul><ul><A id="1"/>
+<li><h3>DownloadProperties</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>ContentDisposition</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>ContentLength</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Long</span>
+<br/><i></i>
+</li><li><b>Cookies</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>DownloadID</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Long</span>
+<br/><i></i>
+</li><li><b>FileExtension</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>FileName</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>IsInitialized</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li><li><b>MimeType</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Url</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>UserAgent</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b>  
+<br/><i>Initializes the fields to their default value.</i>
+</li></ul>
+</li>
+</ul><ul><A id="2"/>
+<li><h3>FileChooserParams</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b> (JavaFileChooserParams <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>ParseResult</b> (ResultCode <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>, Data <span style='color:blue'>As</span> <span style='color:#008B8B'>Intent</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Parse the result returned by the file picker activity.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>AcceptTypes</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String()</span> [read only]
+<br/><i>Returns an array of acceptable MIME types.<BR/>
+</i>
+</li><li><b>FilenameHint</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>The file name of a default selection if specified, or null.<BR/>
+</i>
+</li><li><b>Intent</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Intent</span> [read only]
+<br/><i>Creates an intent that would start a file picker for file selection.<BR/>
+</i>
+</li><li><b>IsCaptureEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [read only]
+<br/><i>Returns preference for a live media captured value (e.g. Camera, Microphone).<BR/>
+</i>
+</li><li><b>Mode</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i>Returns file chooser mode.<BR/>
+</i>
+</li><li><b>ModeAsString</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Returns string value for file chooser mode.<BR/>
+</i>
+</li><li><b>Title</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Returns the title to use for this file selector.<BR/>
+</i>
+</li></ul>
+</li>
+</ul><ul><A id="3"/>
+<li><h3>FileProvider</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>SharedFolder</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>UseFileProvider</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>GetFileUri</b> (FileName <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns the file uri.<BR/>
+</i>
+</li><li><b>Initialize</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>SetFileUriAsIntentData</b> (Intent <span style='color:blue'>As</span> <span style='color:#008B8B'>Intent</span>, FileName <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Replaces the intent Data field with the file uri.<BR/>
+Resets the type field. Make sure to call Intent.SetType after calling this method<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+</li>
+</ul><ul><A id="4"/>
+<li><h3>HttpAuthHandler</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Cancel</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Instructs the WebView to cancel the authentication request.<BR/>
+</i>
+</li><li><b>Initialize</b> (JavaHttpAuthHandler <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>Proceed</b> (Username <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Password <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Instructs the WebView to proceed with the authentication with the given credentials.<BR/>
+</i>
+</li><li><b>toObject</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns Object as android.webkit.HttpAuthHandler which can be used in Java Code.<BR/>
+</i>
+</li><li><b>UseHttpAuthUsernamePassword</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Gets whether the credentials stored for the current host<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+</li>
+</ul><ul><A id="5"/>
+<li><h3>HttpAuthRequestProperties</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>Host</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>IsInitialized</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li><li><b>Realm</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b>  
+<br/><i>Initializes the fields to their default value.</i>
+</li></ul>
+</li>
+</ul><ul><A id="6"/>
+<li><h3>JsProperties</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>DefaultValue</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>IsInitialized</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li><li><b>Message</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Url</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b>  
+<br/><i>Initializes the fields to their default value.</i>
+</li></ul>
+</li>
+</ul><ul><A id="7"/>
+<li><h3>JsResult</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Cancel</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Handle the result if the user cancelled the dialog.<BR/>
+</i>
+</li><li><b>Confirm</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Handle a confirmation response from the user.<BR/>
+</i>
+</li><li><b>Initialize</b> (JavaJsResult <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>toObject</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns Object as android.webkit.JsResult which can be used in Java Code.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+</li>
+</ul><ul><A id="8"/>
+<li><h3>LoginRequestProperties</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>Account</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Args</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>IsInitialized</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li><li><b>Realm</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b>  
+<br/><i>Initializes the fields to their default value.</i>
+</li></ul>
+</li>
+</ul><ul><A id="9"/>
+<li><h3>MessageLevels</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>DEBUG</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i></i>
+</li><li><b>ERROR</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i></i>
+</li><li><b>IsInitialized</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li><li><b>LOG_</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i></i>
+</li><li><b>TIP</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i></i>
+</li><li><b>WARNING</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b>  
+<br/><i>Initializes the fields to their default value.</i>
+</li></ul>
+</li>
+</ul><ul><A id="10"/>
+<li><h3>SafeBrowsingResponse</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>ThreatType</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>ThreatTypeString</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>BackToSafety</b> (ParamBoolean <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Act as if the user clicked the "back to safety" button.<BR/>
+ParamBoolean As Boolean: true to enable Safe Browsing reporting.<BR/>
+</i>
+</li><li><b>Initialize</b> (ObjectFromJava <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object. ObjectFromJava As android.webkit.SafeBrowsingResponse. Object should not be user initialized.<BR/>
+</i>
+</li><li><b>Proceed</b> (ParamBoolean <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Act as if the user clicked the "visit this unsafe site" button.<BR/>
+ParamBoolean As Boolean: true to enable Safe Browsing reporting.<BR/>
+</i>
+</li><li><b>ShowInterstitial</b> (ParamBoolean <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Display the default interstitial.<BR/>
+ParamBoolean As Boolean: true if the interstitial should show a reporting checkbox.<BR/>
+</i>
+</li><li><b>ToObject</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns Object as android.webkit.SafeBrowsingResponse which can be used in Java Code.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+</li>
+</ul><ul><A id="11"/>
+<li><h3>UltimateCookieManager</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Flush</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Ensures all cookies currently accessible through the getCookie API are written to persistent storage.<BR/>
+</i>
+</li><li><b>GetCookie</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Gets all the cookies for the given URL.<BR/>
+</i>
+</li><li><b>HasCookies</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Gets whether there are stored cookies.<BR/>
+</i>
+</li><li><b>Initialize</b> (UltimateWebView1 <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateWebView</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>RemoveAllCookies</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Removes all cookies.<BR/>
+</i>
+</li><li><b>RemoveExpiredCookie</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>This method was deprecated in API level 21. The WebView handles removing expired cookies automatically.<BR/>
+</i>
+</li><li><b>RemoveSessionCookies</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Removes all session cookies, which are cookies without an expiration date.<BR/>
+</i>
+</li><li><b>SetCookie</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Value <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets a single cookie (key-value pair) for the given URL.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>AcceptCookies</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Gets or sets whether the application's UltimateWebView instances send and accept cookies.<BR/>
+</i>
+</li><li><b>AcceptFileSchemeCookies</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>This method was deprecated in API level 30. This setting is not secure.<BR/>
+</i>
+</li><li><b>AcceptThirdPartyCookies</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Gets or sets whether the UltimateWebView should allow third party cookies to be set.<BR/>
+</i>
+</li></ul>
+</li>
+</ul><ul><A id="12"/>
+<li><h3>UltimateMimeTypeMap</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>ExtensionFromMimeType</b> (MimeType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Return the registered extension for the given MIME type.<BR/>
+</i>
+</li><li><b>FileExtensionFromUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Returns the file extension or an empty string if there is no extension.<BR/>
+</i>
+</li><li><b>HasExtension</b> (Extension <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Return true if the given extension has a registered MIME type.<BR/>
+</i>
+</li><li><b>HasMimeType</b> (MimeType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Return true if the given MIME type has an entry in the map.<BR/>
+</i>
+</li><li><b>Initialize</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>MimeTypeFromExtension</b> (Extension <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Return the MIME type for the given extension.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+</li>
+</ul><ul><A id="13"/>
+<li><h3>UltimateURLUtil</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>ComposeSearchUrl</b> (InQuery <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Template <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, QueryPlaceHolder <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Decode</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>Byte()</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Byte()</span>
+<br/><i></i>
+</li><li><b>GuessFileName</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, ContentDisposition <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, MimeType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Guesses canonical filename that a download would have, using the URL and contentDisposition.<BR/>
+</i>
+</li><li><b>GuessUrl</b> (InUrl <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Cleans up (if possible) user-entered web addresses<BR/>
+</i>
+</li><li><b>Initialize</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>IsAboutUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsAssetUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsContentUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsDataUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsFileUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsHttpsUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsHttpUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsJavaScriptUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsNetworkUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>IsValidUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>StripAnchor</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Strips the url of the anchor.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+</li>
+</ul><ul><A id="14"/>
+<li><h3>UltimateWebView</h3>
+<ul><i></i></ul>
+<h3>Events:</h3>
+<ul><li><b>ConsoleMessage</b> (ConsoleMessage1 <span style='color:blue'>As</span> <span style='color:#008B8B'>ConsoleMessage</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span></li>
+<li><b>CreateChildWindow</b> (IsDialog <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>, IsUserGesture <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateWebView</span></li>
+<li><b>ExecuteJavaScriptResult</b> (Result <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>)</li>
+<li><b>FileChooserInitialized</b> (FilePathCallback <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>, FileChooserParams1 <span style='color:blue'>As</span> <span style='color:#008B8B'>FileChooserParams</span>)</li>
+<li><b>FileDownloadCompleted</b> (Success <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>, DownloadProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>DownloadProperties</span>)</li>
+<li><b>FileDownloadInitialized</b> (DownloadProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>DownloadProperties</span>)</li>
+<li><b>FileDownloadStarted</b> (DownloadProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>DownloadProperties</span>)</li>
+<li><b>JsAlert</b> (JsProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>JsProperties</span>, JsResult1 <span style='color:blue'>As</span> <span style='color:#008B8B'>JsResult</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span></li>
+<li><b>JsBeforeUnload</b> (JsProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>JsProperties</span>, JsResult1 <span style='color:blue'>As</span> <span style='color:#008B8B'>JsResult</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span></li>
+<li><b>JsConfirm</b> (JsProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>JsProperties</span>, JsResult1 <span style='color:blue'>As</span> <span style='color:#008B8B'>JsResult</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span></li>
+<li><b>LoadResource</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>)</li>
+<li><b>OverrideUrl</b> (WebResourceRequest1 <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceRequest</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span></li>
+<li><b>OverrideUrlWithExternalAppIntent</b> (WebResourceRequest1 <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceRequest</span>, ExternalAppIntent <span style='color:blue'>As</span> <span style='color:#008B8B'>Intent</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span></li>
+<li><b>PageCommitVisible</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>)</li>
+<li><b>PageFinished</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>)</li>
+<li><b>PageLoadingProgressChanged</b> (Progress <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>)</li>
+<li><b>PageStarted</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, FavIcon <span style='color:blue'>As</span> <span style='color:#008B8B'>Bitmap</span>)</li>
+<li><b>PermissionRequest</b> (RequestedPermission <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>)</li>
+<li><b>ReceivedError</b> (WebResourceRequest1 <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceRequest</span>, WebResourceError1 <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceError</span>)</li>
+<li><b>ReceivedHttpAuthRequest</b> (HttpAuthHandler1 <span style='color:blue'>As</span> <span style='color:#008B8B'>HttpAuthHandler</span>, HttpAuthRequestProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>HttpAuthRequestProperties</span>)</li>
+<li><b>ReceivedHttpError</b> (WebResponseRequest1 <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceRequest</span>, WebResourceResponse1 <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceResponse</span>)</li>
+<li><b>ReceivedIcon</b> (Icon <span style='color:blue'>As</span> <span style='color:#008B8B'>Bitmap</span>)</li>
+<li><b>ReceivedLoginRequest</b> (LoginRequestProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>LoginRequestProperties</span>)</li>
+<li><b>ReceivedTitle</b> (Title <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>)</li>
+<li><b>RenderProcessGone</b> (DidCrash <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>, RendererPriorityAtExit <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>)</li>
+<li><b>SafeBrowsingHit</b> (WebResourceRequest1 <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceRequest</span>, SafeBrowsingResponse1 <span style='color:blue'>As</span> <span style='color:#008B8B'>SafeBrowsingResponse</span>)</li>
+<li><b>ScaleChanged</b> (OldScale <span style='color:blue'>As</span> <span style='color:#008B8B'>Float</span>, NewScale <span style='color:blue'>As</span> <span style='color:#008B8B'>Float</span>)</li>
+<li><b>ShouldInterceptRequest</b> (Request <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceRequest</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>WebResourceResponse</span></li>
+<li><b>UpdateVisitedHistory</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, IsReload <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>)</li>
+</ul>
+<h3>Functions:</h3>
+<ul><li><b>AddJavascriptInterface</b> (Javascript <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>, Name <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Injects the supplied Java object into this UltimateWebView. The object is injected into all frames of the web page, including all the iframes, using the supplied name. This allows the Java object's methods to be accessed from JavaScript.<BR/>
+</i>
+</li><li><b>BringToFront</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>CanGoBack</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Gets whether this UltimateWebView has a back history item.<BR/>
+</i>
+</li><li><b>CanGoBackOrForward</b> (Steps <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Gets whether the page can go back or forward the given number of steps.<BR/>
+Steps as Int (negative - back or positive - forward number of steps to move the history)<BR/>
+</i>
+</li><li><b>CanGoForward</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Gets whether this UltimateWebView has a forward history item.<BR/>
+</i>
+</li><li><b>CaptureScreenshotToBitmap</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Bitmap</span>
+<br/><i>Capture UltimateWebView visible area to Bitmap.<BR/>
+</i>
+</li><li><b>CaptureScreenshotToImageFile</b> (FilePath <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, FileNameWithExtension <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, ImageType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, ImageQuality <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Capture UltimateWebView visible area to Image File.<BR/>
+Permission WRITE_EXTERNAL_STORAGE required<BR/>
+ImageType: "jpeg" or "png" or "webp"<BR/>
+ImageQuality: 1 to 100<BR/>
+</i>
+</li><li><b>ClearCache</b> (IncludeDiskFiles <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Clears the resource cache. Note that the cache is per-application, so this will clear the cache for all UltimateWebViews used.<BR/>
+IncludeDiskFiles As Boolean (if false, only the RAM cache is cleared)<BR/>
+</i>
+</li><li><b>ClearFormData</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Removes the autocomplete popup from the currently focused form field, if present.<BR/>
+</i>
+</li><li><b>ClearHistory</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Tells this UltimateWebView to clear its internal back/forward list.<BR/>
+</i>
+</li><li><b>ClearMatches</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Clears the highlighting surrounding text matches created by findAllAsync(String).<BR/>
+</i>
+</li><li><b>ClearSslPreferences</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Clears the SSL preferences table stored in response to proceeding with SSL certificate errors.<BR/>
+</i>
+</li><li><b>ComputeScroll</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Called by a parent to request that a child update its values for mScrollX and mScrollY if necessary.<BR/>
+</i>
+</li><li><b>DesignerCreateView</b> (Base <span style='color:blue'>As</span> <span style='color:#008B8B'>Panel</span>, Lbl <span style='color:blue'>As</span> <span style='color:#008B8B'>Label</span>, Props <span style='color:blue'>As</span> <span style='color:#008B8B'>Map</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>EnableSlowWholeDocumentDraw</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>For apps targeting the L release, UltimateWebView has a new default behavior that reduces memory footprint and increases performance by intelligently choosing the portion of the HTML document that needs to be drawn. These optimizations are transparent to the developers.<BR/>
+</i>
+</li><li><b>ExecuteJavaScript</b> (JavaScript <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Execute Javascript in UltimateWebView.<BR/>
+Important: UltimateWebView1.Settings.JavaScriptEnabled=True 'Must be set to True somewhere in code<BR/>
+</i>
+</li><li><b>ExecuteJavaScript2</b> (JavaScript <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Execute Javascript in UltimateWebView and got asynchronius backward Result.<BR/>
+Event "ExecuteJavaScriptResult (Result as String)" will be fired when result is available. Result can be "null".<BR/>
+Example:<BR/>
+	UltimateWebView1.Settings.JavaScriptEnabled=True 'Must be set to True somewhere in code<BR/>
+	UltimateWebView1.ExecuteJavascript2([Your JavaScript Code])<BR/>
+	Wait For UltimateWebView1_ExecuteJavaScriptResult (Result As String)<BR/>
+	'Do your stuff with Result<BR/>
+</i>
+</li><li><b>FileChooserStart</b> (FilePathCallback <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>, FileChooserParams1 <span style='color:blue'>As</span> <span style='color:#008B8B'>FileChooserParams</span>, ForceIsCaptureEnabled <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>You can use this method to run FileChooser to upload a file. It is important that you use this method in the FileChooserInitialized event.<BR/>
+FilePathCallback and FileChooserParams1 are initialized by Event.<BR/>
+ForceIsCaptureEnabled As Boolean - True: Use resources such as camera, microphone, etc. by force if the required file format is appropriate. False: Use a predefined value assigned to FileChooserParams.<BR/>
+</i>
+</li><li><b>FindAllAsync</b> (Find <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Finds all instances of find on the page and highlights them, asynchronously.<BR/>
+</i>
+</li><li><b>FindNext</b> (Forward <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Highlights and scrolls to the next match found by FindAllAsync(Find As String), wrapping around page boundaries as necessary.<BR/>
+</i>
+</li><li><b>FlingScroll</b> (X <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>, Y <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>GoBack</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Goes back in the history of this UltimateWebView.<BR/>
+</i>
+</li><li><b>GoBackOrForward</b> (Steps <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Goes to the history item that is the number of steps away from the current item. Steps is negative if backward and positive if forward.<BR/>
+</i>
+</li><li><b>GoForward</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Goes forward in the history of this UltimateWebView.<BR/>
+</i>
+</li><li><b>GrantPermission</b> (Granted <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Use to grant or deny permissions which is required by loaded WebSite (Camera, Microphone, Geolocation, Externall Storage...).<BR/>
+Event PermissionRequest (RequestedPermission As String) will be fired when permission is required.<BR/>
+Use RuntimePermissions library to handle permission request.<BR/>
+Example:<BR/>
+Sub UltimateWebView1_PermissionRequest (RequestedPermission As String)<BR/>
+	Dim rp As RuntimePermissions<BR/>
+	rp.CheckAndRequest(RequestedPermission)<BR/>
+	Wait For Activity_PermissionResult (Permission As String, result As Boolean)<BR/>
+	UltimateWebView1.GrantPermission(result)<BR/>
+End Sub<BR/>
+</i>
+</li><li><b>Initialize</b> (Callback <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>, EventName <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Method is called automatically when object is added through Designer.<BR/>
+</i>
+</li><li><b>Invalidate</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>InvokeZoomPicker</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Invokes the graphical zoom picker widget for this WebView.<BR/>
+</i>
+</li><li><b>LoadData</b> (Data <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, MimeType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Encoding <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Note that JavaScript's same origin policy means that script running in a page loaded using this method will be unable to access content loaded using any scheme other than 'data', including 'http(s)'. To avoid this restriction, use LoadDataWithBaseURL() with an appropriate base URL.<BR/>
+The encoding parameter specifies whether the data Is base64 Or URL encoded. If the data Is base64 encoded, the value of the encoding parameter must be "base64"<BR/>
+</i>
+</li><li><b>LoadDataWithBaseURL</b> (BaseUrl <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Data <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, MimeType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Encoding <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, HistoryUrl <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Loads the given data into this UltimateWebView, using baseUrl as the base URL for the content. The base URL is used both to resolve relative URLs and when applying JavaScript's same origin policy. The historyUrl is used for the history entry.<BR/>
+</i>
+</li><li><b>LoadFileFromDirAssets</b> (FileName <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Loads file (HTML, TXT, PNG, JPG...) from DirAssets folder into UltimateWebView.<BR/>
+</i>
+</li><li><b>LoadFileFromDirInternal</b> (FileName <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Loads file (HTML, TXT, PNG, JPG...) from DirInternal folder into UltimateWebView.<BR/>
+</i>
+</li><li><b>LoadUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Loads the given URL.<BR/>
+</i>
+</li><li><b>LoadUrl2</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, AdditionalHttpHeaders <span style='color:blue'>As</span> <span style='color:#008B8B'>Map</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Loads the given URL with additional HTTP headers, specified as a map from name to value. Note that if this map contains any of the headers that are set by default by this UltimateWebView, such as those controlling caching, accept types or the User-Agent, their values may be overridden by this UltimateWebView's defaults.<BR/>
+</i>
+</li><li><b>PageDown</b> (ToBottom <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Scrolls the contents of this UltimateWebView down by half the page size.<BR/>
+ToBottom As Boolean (true to jump to bottom of page).<BR/>
+</i>
+</li><li><b>PageUp</b> (ToTop <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Scrolls the contents of this UltimateWebView up by half the view size.<BR/>
+ToTop As Boolean (true to jump to the top of the page).<BR/>
+</i>
+</li><li><b>Pause</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Does a best-effort attempt to pause any processing that can be paused safely, such as animations and geolocation. Note that this call does not pause JavaScript. To pause JavaScript globally, use pauseTimers().<BR/>
+</i>
+</li><li><b>PauseTimers</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Pauses all layout, parsing, and JavaScript timers for all UltimateWebViews. This is a global requests, not restricted to just this UltimateWebView. This can be useful if the application has been paused.<BR/>
+</i>
+</li><li><b>PostUrl</b> (Url <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, PostData <span style='color:blue'>As</span> <span style='color:#008B8B'>Byte()</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Loads the URL with postData using "POST" method into this WebView.<BR/>
+</i>
+</li><li><b>Reload</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Reloads the current URL.<BR/>
+</i>
+</li><li><b>RemoveJavascriptInterface</b> (Name <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Removes a previously injected Java object from this UltimateWebView. Note that the removal will not be reflected in JavaScript until the page is next (re)loaded.<BR/>
+</i>
+</li><li><b>RemoveView</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Use this property to remove this view from parent.<BR/>
+</i>
+</li><li><b>Resume</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Resumes a UltimateWebView after a previous call to Pause.<BR/>
+</i>
+</li><li><b>ResumeTimers</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Resumes all layout, parsing, and JavaScript timers for all UltimateWebViews. This will resume dispatching all timers.<BR/>
+</i>
+</li><li><b>SaveWebArchive</b> (Filename <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Saves the current view as a web archive.<BR/>
+Filename As String (the filename where the archive should be placed This value cannot be null).<BR/>
+</i>
+</li><li><b>SendToBack</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>SetDownloadListener</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Set and start Download Listener.<BR/>
+Events: FileDownloadInitialized (DownloadProperties1 as DownloadProperties)<BR/>
+Use StartFileDownload method to download file with native Download Manager, or use your own method.<BR/>
+</i>
+</li><li><b>SetRendererPriorityPolicy</b> (RendererRequestedPriority <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>, WaivedWhenNotVisible <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Set the renderer priority policy for this UltimateWebView.<BR/>
+</i>
+</li><li><b>SetWebChromeClient</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the chrome handler. This is an implementation of WebChromeClient for use in handling JavaScript dialogs, favicons, titles, and the progress.<BR/>
+Library will initialize WebChromeClient by itself and associate it with UltimateWebView.<BR/>
+Events associated: JsAlert, JsBeforeUnload, JsConfirm, PermissionRequest, PageLoadingProgressChanged, ReceivedIcon, ReceivedTitle.<BR/>
+Online file upload option will be enabled by default.<BR/>
+Geolocation permission will be handled like any other permission request and will trigger PermissionRequest event.<BR/>
+</i>
+</li><li><b>SetWebViewClient</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the WebViewClient that will receive various notifications and requests.<BR/>
+Library will initialize WebViewCliect by itself and associate it with UltimateWebView.<BR/>
+Events associated: LoadResource, OverrideUrl, PageCommitVisible, PageFinished, PageStarted, ReceivedHttpError, ReceivedHttpAuthRequest, ReceivedError, ReceivedLoginRequest, ShouldInterceptRequest, UpdateVisitedHistory.<BR/>
+</i>
+</li><li><b>StartFileDownload</b> (DownloadProperties1 <span style='color:blue'>As</span> <span style='color:#008B8B'>DownloadProperties</span>, DownloadManagerDescription <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, AllowScanningByMediaScanner <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>, DownloadManagerNotification <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Use this method to download file with native Download Manager.<BR/>
+Events:<BR/>
+FileDownloadStarted (DownloadProperties1 As DownloadProperties)<BR/>
+FileDownloadCompleted (Success As Boolean, DownloadProperties1 As DownloadProperties)<BR/>
+File will be downloaded in "Download" folder.<BR/>
+</i>
+</li><li><b>StopLoading</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Stops the current load.<BR/>
+</i>
+</li><li><b>ZoomBy</b> (ZoomFactor <span style='color:blue'>As</span> <span style='color:#008B8B'>Float</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Performs a zoom operation in this UltimateWebView.<BR/>
+ZoomFactor As Float (the zoom factor to apply. The zoom factor will be clamped to the UltimateWebView's zoom limits. This value must be in the range 0.01 to 100.0 inclusive).<BR/>
+</i>
+</li><li><b>ZoomIn</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Performs zoom in in this UltimateWebView.<BR/>
+</i>
+</li><li><b>ZoomOut</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Performs zoom out in this UltimateWebView.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>AccessibilityClassName</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i></i>
+</li><li><b>BackgroundColor</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [write only]
+<br/><i>Sets the background color for this view.<BR/>
+</i>
+</li><li><b>Color</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [write only]
+<br/><i></i>
+</li><li><b>Constants</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateWebViewConstants</span> [read only]
+<br/><i></i>
+</li><li><b>ContentHeight</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i>Gets the height in pixels of the HTML content.<BR/>
+</i>
+</li><li><b>CookieManager</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateCookieManager</span>
+<br/><i>Gets or sets UltimateCookieManager methods and properties. Class is auto initialized.<BR/>
+</i>
+</li><li><b>CopyBackForwardList</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>WebBackForwardList</span> [read only]
+<br/><i></i>
+</li><li><b>DataDirectorySuffix</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [write only]
+<br/><i>Define the directory used to store WebView data for the current process.<BR/>
+</i>
+</li><li><b>Enabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>FavIcon</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Bitmap</span> [read only]
+<br/><i>Gets the favicon for the current page.<BR/>
+</i>
+</li><li><b>Height</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>InitialScale</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [write only]
+<br/><i>Sets the initial scale for this UltimateWebView. 0 means default.<BR/>
+</i>
+</li><li><b>IsPrivateBrowsingEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [read only]
+<br/><i>Gets whether private browsing is enabled in this UltimateWebView.<BR/>
+</i>
+</li><li><b>Left</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MimeTypeMap</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateMimeTypeMap</span>
+<br/><i>Gets or sets UltimateMimeTypeMap methods and properties. Class is auto initialized.<BR/>
+</i>
+</li><li><b>NetworkAvailable</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [write only]
+<br/><i>Informs WebView of the network state.<BR/>
+</i>
+</li><li><b>OnCheckIsTextEditor</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [read only]
+<br/><i>Check whether the called view is a text editor, in which case it would make sense to automatically display a soft input window for it.<BR/>
+</i>
+</li><li><b>OriginalUrl</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Gets the original URL for the current page.<BR/>
+</i>
+</li><li><b>OverScrollMode</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [write only]
+<br/><i>Set the over-scroll mode for this view.<BR/>
+Values: OVER_SCROLL_ALWAYS, OVER_SCROLL_IF_CONTENT_SCROLLS (allow over-scrolling only if the view content is larger than the container), or OVER_SCROLL_NEVER. Setting the over-scroll mode of a view will have an effect only if the view is capable of scrolling.<BR/>
+</i>
+</li><li><b>Padding</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int()</span>
+<br/><i></i>
+</li><li><b>Parent</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span> [read only]
+<br/><i></i>
+</li><li><b>Progress</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i>Gets the progress for the current page.<BR/>
+</i>
+</li><li><b>SafeBrowsingPrivacyPolicyUrl</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>ba.uri.androidneturi</span> [read only]
+<br/><i>Gets android.net.Uri as AndroidNetUri. Link for AndroidNetUri library and documentations:<BR/>
+https://www.b4x.com/android/forum/threads/androidneturi-library.136402/<BR/>
+</i>
+</li><li><b>ScrollBarStyle</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [write only]
+<br/><i>Specify the style of the scrollbars.<BR/>
+Values: For example, if a view has a background drawable and you want to draw the scrollbars inside the padding specified by the drawable, you can use SCROLLBARS_INSIDE_OVERLAY or SCROLLBARS_INSIDE_INSET. If you want them to appear at the edge of the view, ignoring the padding, then you can use SCROLLBARS_OUTSIDE_OVERLAY or SCROLLBARS_OUTSIDE_INSET.<BR/>
+</i>
+</li><li><b>Settings</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateWebViewSettings</span>
+<br/><i>Gets or sets UltimateWebView Settings. Class is auto initialized.<BR/>
+</i>
+</li><li><b>Tag</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i></i>
+</li><li><b>Text</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Title</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Gets the title for the current page.<BR/>
+</i>
+</li><li><b>Top</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>Url</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Gets the URL for the current page.<BR/>
+</i>
+</li><li><b>URLUtil</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateURLUtil</span>
+<br/><i>Gets or sets UltimateURLUtil methods and properties. Class is auto initialized.<BR/>
+</i>
+</li><li><b>View</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>View</span> [read only]
+<br/><i>Use this property to get UltimateWebView as android.view.View.<BR/>
+</i>
+</li><li><b>Visible</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i></i>
+</li><li><b>WebView</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>WebView</span>
+<br/><i>Gets or sets native B4A WebView from or to UltimateWebView.<BR/>
+</i>
+</li><li><b>Width</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li></ul>
+</li>
+</ul><ul><A id="15"/>
+<li><h3>UltimateWebViewConstants</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>CACHEMODE_LOAD_CACHE_ELSE_NETWORK</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>CACHEMODE_LOAD_CACHE_ONLY</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>CACHEMODE_LOAD_DEFAULT</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>CACHEMODE_LOAD_NO_CACHE</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>FORCE_DARK_AUTO</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>FORCE_DARK_OFF</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>FORCE_DARK_ON</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MENU_ITEM_NONE</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MENU_ITEM_PROCESS_TEXT</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MENU_ITEM_SHARE</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MENU_ITEM_WEB_SEARCH</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MIXED_CONTENT_ALWAYS_ALLOW</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MIXED_CONTENT_COMPATIBILITY_MODE</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>MIXED_CONTENT_NEVER_ALLOW</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>OVER_SCROLL_ALWAYS</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>OVER_SCROLL_IF_CONTENT_SCROLLS</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>OVER_SCROLL_NEVER</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>RENDERER_PRIORITY_BOUND</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>RENDERER_PRIORITY_IMPORTANT</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>RENDERER_PRIORITY_WAIVED</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>SCROLLBARS_INSIDE_INSET</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>SCROLLBARS_INSIDE_OVERLAY</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>SCROLLBARS_OUTSIDE_INSET</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li><li><b>SCROLLBARS_OUTSIDE_OVERLAY</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+</li>
+</ul><ul><A id="16"/>
+<li><h3>UltimateWebViewSettings</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b> (UltimateWebView1 <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateWebView</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object. You can add parameters to this method if needed.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>AllowContentAccess</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Enables or disables content URL access within WebView.<BR/>
+</i>
+</li><li><b>AllowFileAccess</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Enables or disables file access within WebView.<BR/>
+</i>
+</li><li><b>AllowFileAccessFromFileURLs</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>This method was deprecated in API level 30. This setting is not secure.<BR/>
+</i>
+</li><li><b>AllowUniversalAccessFromFileURLs</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>This method was deprecated in API level 30. This setting is not secure.<BR/>
+</i>
+</li><li><b>AppCacheEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [write only]
+<br/><i>This method was deprecated in API level 30. The Application Cache API is deprecated and this method will become a no-op on all Android versions once support is removed in Chromium. Consider using Service Workers instead. See https://web.dev/appcache-removal/ for more information.<BR/>
+</i>
+</li><li><b>AppCacheMaxSize</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Long</span> [write only]
+<br/><i>This method was deprecated in API level 18. Quota is managed automatically; this method is a no-op.<BR/>
+</i>
+</li><li><b>AppCachePath</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [write only]
+<br/><i>This method was deprecated in API level 30. The Application Cache API is deprecated and this method will become a no-op on all Android versions once support is removed in Chromium. Consider using Service Workers instead. See https://web.dev/appcache-removal/ for more information.<BR/>
+</i>
+</li><li><b>BlockNetworkImage</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView should not load image resources from the network (resources accessed via http and https URI schemes).<BR/>
+</i>
+</li><li><b>BlockNetworkLoads</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView should not load resources from the network.<BR/>
+</i>
+</li><li><b>BuiltInZoomControls</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView should use its built-in zoom mechanisms.<BR/>
+</i>
+</li><li><b>CacheMode</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Overrides the way the cache is used.<BR/>
+Values (CacheMode_LOAD_DEFAULT=-1, CacheMode_LOAD_CACHE_ELSE_NETWORK=1, CacheMode_LOAD_NO_CACHE=2, CacheMode_LOAD_CACHE_ONLY=3)<BR/>
+</i>
+</li><li><b>Constants</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateWebViewConstants</span> [read only]
+<br/><i></i>
+</li><li><b>CursiveFontFamily</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the cursive font family name.<BR/>
+</i>
+</li><li><b>DatabaseEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the database storage API is enabled.<BR/>
+</i>
+</li><li><b>DatabasePath</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>This method was deprecated in API level 19. Database paths are managed by the implementation and calling this method will have no effect.<BR/>
+</i>
+</li><li><b>DefaultFixedFontSize</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Sets the default fixed font size.<BR/>
+</i>
+</li><li><b>DefaultFontSize</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Sets the default font size.<BR/>
+</i>
+</li><li><b>DefaultTextEncodingName</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the default text encoding name to use when decoding html pages.<BR/>
+</i>
+</li><li><b>DisabledActionModeMenuItems</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Disables the action mode menu items according to menuItems flag.<BR/>
+Values (MENU_ITEM_NONE=0, MENU_ITEM_SHARE=1, MENU_ITEM_WEB_SEARCH=2, MENU_ITEM_PROCESS_TEXT=4)<BR/>
+</i>
+</li><li><b>DisplayZoomControls</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView should display on-screen zoom controls when using the built-in zoom mechanisms.<BR/>
+</i>
+</li><li><b>DomStorageEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the DOM storage API is enabled.<BR/>
+</i>
+</li><li><b>EnableSmoothTransition</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>This method was deprecated in API level 17. This method is now obsolete, and will become a no-op in future.<BR/>
+</i>
+</li><li><b>FantasyFontFamily</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the fantasy font family name.<BR/>
+</i>
+</li><li><b>FixedFontFamily</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the fixed font family name.<BR/>
+</i>
+</li><li><b>ForceDark</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Set the force dark mode for this WebView.<BR/>
+Values (FORCE_DARK_OFF=0, FORCE_DARK_AUTO=1, FORCE_DARK_ON=2)<BR/>
+</i>
+</li><li><b>GeolocationDatabasePath</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [write only]
+<br/><i>This method was deprecated in API level 24. Geolocation database are managed by the implementation and calling this method will have no effect.<BR/>
+</i>
+</li><li><b>GeolocationEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [write only]
+<br/><i>Sets whether Geolocation is enabled.<BR/>
+Permissions in manifest (Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_FINE_LOCATION)<BR/>
+</i>
+</li><li><b>JavaScriptCanOpenWindowsAutomatically</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tells JavaScript to open windows automatically.<BR/>
+</i>
+</li><li><b>JavaScriptEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tells the WebView to enable JavaScript execution.<BR/>
+</i>
+</li><li><b>LightTouchEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>This method was deprecated in API level 18. From Build.VERSION_CODES.JELLY_BEAN this setting is obsolete and has no effect.<BR/>
+</i>
+</li><li><b>LoadsImagesAutomatically</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView should load image resources.<BR/>
+</i>
+</li><li><b>LoadWithOverviewMode</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView loads pages in overview mode, that is, zooms out the content to fit on screen by width.<BR/>
+</i>
+</li><li><b>MediaPlaybackRequiresUserGesture</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView requires a user gesture to play media.<BR/>
+</i>
+</li><li><b>MinimumFontSize</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Sets the minimum font size.<BR/>
+</i>
+</li><li><b>MinimumLogicalFontSize</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Sets the minimum logical font size.<BR/>
+</i>
+</li><li><b>MixedContentMode</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Configures the WebView's behavior when a secure origin attempts to load a resource from an insecure origin.<BR/>
+Values (MIXED_CONTENT_ALWAYS_ALLOW=0, MIXED_CONTENT_NEVER_ALLOW=1, MIXED_CONTENT_COMPATIBILITY_MODE=2).<BR/>
+</i>
+</li><li><b>NeedInitialFocus</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [write only]
+<br/><i>Tells the WebView whether it needs to set a node to have focus when WebView#requestFocus(int, android.graphics.Rect) is called.<BR/>
+</i>
+</li><li><b>OffscreenPreRaster</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether this WebView should raster tiles when it is offscreen but attached to a window.<BR/>
+</i>
+</li><li><b>SafeBrowsingEnabled</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether Safe Browsing is enabled.<BR/>
+</i>
+</li><li><b>SansSerifFontFamily</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the sans-serif font family name.<BR/>
+</i>
+</li><li><b>SaveFormData</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>This method was deprecated in API level 26. In Android O and afterwards, this function does not have any effect, the form data will be saved to platform's autofill service if applicable.<BR/>
+</i>
+</li><li><b>SavePassword</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>This method was deprecated in API level 18. Saving passwords in WebView will not be supported in future versions.<BR/>
+</i>
+</li><li><b>SerifFontFamily</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the serif font family name.<BR/>
+</i>
+</li><li><b>StandardFontFamily</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the standard font family name.<BR/>
+</i>
+</li><li><b>SupportMultipleWindows</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView whether supports multiple windows.<BR/>
+</i>
+</li><li><b>SupportZoom</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView should support zooming using its on-screen zoom controls and gestures.<BR/>
+</i>
+</li><li><b>TextZoom</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>
+<br/><i>Sets the text zoom of the page in percent.<BR/>
+</i>
+</li><li><b>UserAgentString</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the WebView's user-agent string.<BR/>
+</i>
+</li><li><b>UseWideViewPort</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Sets whether the WebView should enable support for the "viewport" HTML meta tag or should use a wide viewport.<BR/>
+</i>
+</li></ul>
+</li>
+</ul><ul><A id="17"/>
+<li><h3>WebBackForwardList</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>GetItemAtIndex</b> (Index <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>WebHistoryItem</span>
+<br/><i>Get the history item at the given index.<BR/>
+</i>
+</li><li><b>Initialize</b> (UltimateWebView1 <span style='color:blue'>As</span> <span style='color:#008B8B'>UltimateWebView</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>toList</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>List</span>
+<br/><i>Convrets object to List Of WebHistoryItem<BR/>
+</i>
+</li><li><b>toObject</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns Object as android.webkit.WebBackForwardList which can be used in Java Code.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>CurrentIndex</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i>Get the index of the current history item.<BR/>
+</i>
+</li><li><b>CurrentItem</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>WebHistoryItem</span> [read only]
+<br/><i>Return the current history item.<BR/>
+</i>
+</li><li><b>Size</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i>Get the total size of the back/forward list.<BR/>
+</i>
+</li></ul>
+</li>
+</ul><ul><A id="18"/>
+<li><h3>WebHistoryItem</h3>
+<ul><i></i></ul>
+<h3>Fields:</h3>
+<ul><li><b>Favicon</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Bitmap</span>
+<br/><i></i>
+</li><li><b>IsInitialized</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li><li><b>OriginalUrl</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Title</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li><li><b>Url</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i></i>
+</li></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b>  
+<br/><i>Initializes the fields to their default value.</i>
+</li></ul>
+</li>
+</ul><ul><A id="19"/>
+<li><h3>WebResourceError</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b> (JavaWebResourceError <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>toObject</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns Object as android.webkit.WebResourceError which can be used in Java Code.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>Description</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Gets the string describing the error.<BR/>
+</i>
+</li><li><b>ErrorCode</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i>Gets the error code of the error.<BR/>
+</i>
+</li></ul>
+</li>
+</ul><ul><A id="20"/>
+<li><h3>WebResourceRequest</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Initialize</b> (JavaWebResourceRequest <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object.<BR/>
+</i>
+</li><li><b>toObject</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns Object as android.webkit.WebResourceRequest which can be used in Java Code.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>GetMethod</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Gets the method associated with the request, for example "GET".<BR/>
+</i>
+</li><li><b>GetRequestHeaders</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Map</span> [read only]
+<br/><i>Gets the headers associated with the request.<BR/>
+</i>
+</li><li><b>GetUrl</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Gets the URL for which the resource request was made.<BR/>
+</i>
+</li><li><b>HasGesture</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [read only]
+<br/><i>Gets whether a gesture (such as a click) was associated with the request.<BR/>
+</i>
+</li><li><b>IsForMainFrame</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [read only]
+<br/><i>Gets whether the request was made in order to fetch the main frame's document.<BR/>
+</i>
+</li><li><b>IsRedirect</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span> [read only]
+<br/><i>Gets whether the request was a result of a server-side redirect.<BR/>
+</i>
+</li></ul>
+</li>
+</ul><ul><A id="21"/>
+<li><h3>WebResourceResponse</h3>
+<ul><i></i></ul>
+<h3>Functions:</h3>
+<ul><li><b>Create</b> (MimeType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Encoding <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Data <span style='color:blue'>As</span> <span style='color:#008B8B'>InputStream</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Constructs a resource response with the given MIME type, character encoding, and input stream.<BR/>
+MimeType As String - the resource response's MIME type, for example "text/html".<BR/>
+Encoding As String - the resource response's character encoding, for example "utf-8".<BR/>
+Data As InputStream - the input stream that provides the resource response's data.<BR/>
+</i>
+</li><li><b>Create2</b> (MimeType <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, Encoding <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, StatusCode <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>, ReasonPhrase <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>, ResponseHeaders <span style='color:blue'>As</span> <span style='color:#008B8B'>Map</span>, Data <span style='color:blue'>As</span> <span style='color:#008B8B'>InputStream</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Constructs a resource response with the given parameters.<BR/>
+MimeType As String - the resource response's MIME type, for example "text/html".<BR/>
+Encoding As String - the resource response's character encoding, for example "utf-8".<BR/>
+StatusCode As Int - the status code needs to be in the ranges [100, 299], [400, 599]. Causing a redirect by specifying a 3xx code is not supported.<BR/>
+ReasonPhrase As String - the phrase describing the status code, for example "OK". Must be non-empty. This value cannot be null.<BR/>
+ResponseHeaders As Map - the resource response's headers represented as a mapping of header name -> header value.<BR/>
+Data As InputStream - the input stream that provides the resource response's data.<BR/>
+</i>
+</li><li><b>Create3</b> (JavaWebResourceResponse <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Constructs a resource from android.webkit.WebResourceResponse generated in Java Code.<BR/>
+</i>
+</li><li><b>Initialize</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Initializes the object. Empty WebResourceResponse is created.<BR/>
+Use Create methods to create with parameters.<BR/>
+</i>
+</li><li><b>StatusCodeAndReasonPhrase</b> (StatusCode <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span>, ReasonPharse <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>) <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Sets the resource response's status code and reason phrase.<BR/>
+StatusCode As Int - the status code needs to be in the ranges [100, 299], [400, 599]. Causing a redirect by specifying a 3xx code is not supported.<BR/>
+ReasonPharse As String - the phrase describing the status code, for example "OK". Must be non-empty. This value cannot be Null.<BR/>
+</i>
+</li><li><b>toObject</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Object</span>
+<br/><i>Returns Object as android.webkit.WebResourceResponse which can be used in Java Code.<BR/>
+</i>
+</li><li><b>IsInitialized</b>  <span style='color:blue'>As</span> <span style='color:#008B8B'>Boolean</span>
+<br/><i>Tests whether the object has been initialized.</i>
+</li></ul>
+<h3>Properties:</h3>
+<ul><li><b>Data</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>InputStream</span>
+<br/><i>Gets or sets the input stream that provides the resource response's data.<BR/>
+</i>
+</li><li><b>Encoding</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Gets or sets the resource response's encoding.<BR/>
+</i>
+</li><li><b>MimeType</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span>
+<br/><i>Gets or sets the resource response's MIME type.<BR/>
+</i>
+</li><li><b>ReasonPhrase</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>String</span> [read only]
+<br/><i>Gets the description of the resource response's status code.<BR/>
+</i>
+</li><li><b>ResponseHeaders</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Map</span>
+<br/><i>Gets or sets the headers for the resource response.<BR/>
+</i>
+</li><li><b>StatusCode</b> <span style='color:blue'>As</span> <span style='color:#008B8B'>Int</span> [read only]
+<br/><i>Gets the resource response's status code.<BR/>
+</i>
+</li></ul>
+</li>
+</ul>
+<ul><li><h3>Author: Ivica Golubovic</h3></li></ul>
+<ul><li><h3>Version: 1.6</h3></li></ul>
+</body>
+</html>
